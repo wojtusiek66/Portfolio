@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfolio — Single Page</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<nav class="main-nav">
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#games">Games</a></li>
+<li><a href="#objects">Objects</a></li>
+<li><a href="#contact">Kontakt</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main class="page-wrapper">
+<section id="home" class="section hero full-hero" style="background-image:url('images/hero.jpg')">
+<div class="hero-inner container">
+<h1 class="hero-title">Twoje Imię — Krótkie Hasło</h1>
+<p class="hero-sub">Projekt / Designer / Developer</p>
+<a class="cta" href="#games">Zobacz projekty</a>
+</div>
+</section>
+
+
+<section id="about" class="section about">
+<div class="container">
+<h2>About</h2>
+<p>Krótki opis — kto jesteś, czym się zajmujesz, kilka słów o projektach.</p>
+</div>
+</section>
+
+
+<section id="games" class="section games">
+<div class="container games-inner">
+<div class="gallery-layout">
+<div class="thumbs">
+<button class="thumb-btn active" data-src="images/game1.jpg">1</button>
+<button class="thumb-btn" data-src="images/game2.jpg">2</button>
+<button class="thumb-btn" data-src="images/game3.jpg">3</button>
+<button class="thumb-btn" data-src="images/game4.jpg">4</button>
+</div>
+
+
+<div class="preview-card">
+<div class="image-card">
+<img id="preview" src="images/game1.jpg" alt="Podgląd gry">
+</div>
+<div class="image-caption">Kliknij przyciski z lewej, aby zmienić podgląd.</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section id="objects" class="section objects">
+<div class="container">
+<h2>Objects</h2>
+<div class="objects-row">
+<div class="obj" data-images="images/obj1-1.jpg,images/obj1-2.jpg,images/obj1-3.jpg"><img src="images/obj1-1.jpg" alt="Obiekt 1"></div>
+<div class="obj" data-images="images/obj2-1.jpg,images/obj2-2.jpg"><img src="images/obj2-1.jpg" alt="Obiekt 2"></div>
+<div class="obj" data-images="images/obj3-1.jpg,images/obj3-2.jpg,images/obj3-3.jpg"><img src="images/obj3-1.jpg" alt="Obiekt 3"></div>
+<div class="obj" data-images="images/obj4-1.jpg"><img src="images/obj4-1.jpg" alt="Obiekt 4"></div>
+</div>
+</div>
+
+
+<!-- modal podglądu obiektu (ukryty) -->
+<div id="objModal" class="modal" aria-hidden="true">
+<button class="modal-close" id="modalClose">✕</button>
+<button class="modal-arrow left" id="modalPrev">◀</button>
+<div class="modal-content">
+<img id="modalImage" src="" alt="Podgląd obiektu">
+<div class="modal-caption" id="modalCaption"></div>
+</div>
+<button class="modal-arrow right" id="modalNext">▶</button>
+</div>
+
+
+</section>
+
+
+<section id="contact" class="section contact">
+<div class="container">
+<h2>Kontakt</h2>
+<form id="contactForm" class="contact-form">
+<div class="form-row"><input type="text" name="name" placeholder="Imię i nazwisko" required></div>
+</html>
