@@ -161,6 +161,7 @@
   });
 
 })();
+
 =======
 // Single-page navigation + gallery + objects modal + contact form
 (() => {
