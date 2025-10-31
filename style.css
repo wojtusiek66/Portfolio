@@ -21,7 +21,7 @@ body{margin:0; font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto; 
 
 /* sekcje pełnoekranowe */
 .section{min-height:100vh; display:flex; align-items:center; justify-content:center; padding:80px 0}
-.full-hero{background-size:cover; background-position:center; position:relative}
+.full-hero{background-size:contain; background-position:center; position:relative}
 .hero-inner{text-align:center}
 .hero-title{font-size:clamp(2.2rem,6vw,4rem); margin:0 0 8px; color:white}
 .hero-sub{margin:0 0 18px; color:var(--muted-2)}
@@ -78,4 +78,19 @@ body{margin:0; font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto; 
 .thumbs{flex-direction:row; justify-content:center; margin-left:0}
 .objects-row{flex-direction:row; gap:10px; overflow-x:auto}
 .obj{width:40vw}
+}
+
+#home {
+  background-image: url('images/MountainsFinal.png"');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; /* zmiana z cover na contain — nic się nie przytnie */
+  background-color: black; /* tło wokół obrazu */
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
