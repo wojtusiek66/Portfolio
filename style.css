@@ -9,18 +9,7 @@
 --container:1200px;
 }
 
-#home.full-hero {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; /* jeśli chcesz żeby zawsze wypełniał ekran */
-  width: 100%;
-  height: 100vh; /* wymusza pełny ekran */
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -98,3 +87,16 @@ body{margin:0; font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto; 
 .obj{width:40vw}
 }
 
+/* obraz jako rzeczywiste tło (object-fit) */
+#home { position: relative; min-height: 100vh; width: 100%; overflow: hidden; }
+
+#home .hero-bg{
+  position: absolute;
+  inset: 0;              /* top:0; right:0; bottom:0; left:0; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* cover -> wypełnia cały ekran (może lekko przycinać) */
+  object-position: center center;
+  z-index: -1;           /* pod treścią */
+  display: block;
+}
