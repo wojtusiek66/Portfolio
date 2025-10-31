@@ -26,7 +26,20 @@ body{margin:0; font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto; 
 .hero-title{font-size:clamp(2.2rem,6vw,4rem); margin:0 0 8px; color:white}
 .hero-sub{margin:0 0 18px; color:var(--muted-2)}
 
-
+#home {
+  background-image: url("/images/AstroMonkey.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; /* zmiana z cover na contain — nic się nie przytnie */
+  background-color: black; /* tło wokół obrazu */
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
 
 /* GAMES: przyciski bardziej do lewej i większy podgląd */
 .games-inner{width:100%}
@@ -80,17 +93,3 @@ body{margin:0; font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto; 
 .obj{width:40vw}
 }
 
-#home {
-  background-image: url('images/MountainsFinal.png"');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain; /* zmiana z cover na contain — nic się nie przytnie */
-  background-color: black; /* tło wokół obrazu */
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
